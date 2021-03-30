@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: rgb(194, 248, 229);
+}
+
+html, body{
+    height: 100vh;
+
+}
+
+header{
+    background-color: rgba(126, 32, 214, 0.945);
+    border: 1px solid rgba(196, 190, 201, 0.87);
+}
+
+header .container {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    justify-content: space-between;
+    margin: auto;
+    width: 90%;
+    
+    
+  }
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+    padding: 24px;
+    transition: all 250ms linear 0s;
+  }
+
+  header nav ul li a:hover {
+    background: rgba(255,255,255, 0.15)
+  }
+
+h1{
+    
+    font-size: 4rem;
+    color: rgb(223, 223, 245);
+}
+
+
+
+main{
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8rem;
+    width: 25%;
+    height: 50%;
+    background-color: rgb(55, 40, 90);
+    color: rgb(220, 217, 248);
+    border-radius: 6px;
+    font-size: 1.6rem;
+    border: 1px solid #bcb6bd;
+    
+}
+
+
+
+main ul{
+    padding: 3rem;
+
+}
+
+
+ul li{
+    margin: 2rem;
+}
+
+main ul li:hover{
+    background-color: rgb(241, 252, 252);
+    color: #9923ad;
+    border: 1px double #f8edfa;
+    border-radius: 6px;
+    padding: 3px;
+}

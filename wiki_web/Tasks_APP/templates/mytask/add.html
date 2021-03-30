@@ -1,0 +1,29 @@
+{%extends "mytask/layout.html"%}
+{% load static %}
+{%block styles%}
+     <link rel="stylesheet" href="{%static 'tasks/newstyle.css' %}">
+{%endblock%}
+
+{%block body%}
+<header>
+    <div class="container">
+        <h1>Add Tasks</h1>
+    <nav>
+        
+    <ul>
+        <li><a href="{% url 'tasks:index'%}">Home</a></li>
+    </ul>
+</nav>
+</div>
+</header>
+
+<main>
+    <section>
+    <form action="{% url 'tasks:add'%}" method="POST">
+        {%csrf_token%}
+        {{form}}
+        <input type="submit" value="Add Task">
+    </form>
+</section>
+</main>
+{%endblock%}

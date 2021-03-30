@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  href="{% static  'newyear/style.css' %}" rel="stylesheet">
+    <title>NEW YEAR</title>
+</head>
+<body >
+    {% if newyear %}
+    <h1>YES</h1>
+    {%else %}
+    <h1 >NO</h1>
+    {% endif %}
+  <!---
+    O sinal de porcertagem é aplicado para incluir qualquer tipo de lógica com a sintaxe parecida com python;
+
+    Portanto o django está aplicando a função do jinja que é usar variáveis e condições lógicas dentro do HTML,
+    e no caso acima está verificando se a variável de contexto é True Yes or Else False No.
+-->
+</body>
+</html>
